@@ -1,0 +1,461 @@
+/* ==============================
+   1. General Page Styles
+   ============================== */
+
+/* Remove default spacing and make sizing easier */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles for the whole page */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #f8f9fc;
+}
+
+/* Smooth movement when clicking navigation links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ==============================
+   2. Navigation Bar
+   ============================== */
+
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 18px 20px;
+
+    /* Put logo and links on one line */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #5b5bd6;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #5b5bd6;
+}
+/* Theme Button */
+.theme-toggle {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    width: 10%;
+}
+
+/* Smooth Transition */
+body,
+header,
+footer,
+.hero,
+.section,
+.project-card {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+/* ==============================
+   3. Home / Hero Section
+   ============================== */
+
+.hero {
+    max-width: 1100px;
+    min-height: 480px;
+    margin: auto;
+    padding: 70px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.welcome {
+    color: #5b5bd6;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin: 10px 0;
+}
+
+.hero h2 {
+    color: #5b5bd6;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    margin-bottom: 22px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #5b5bd6;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #4141ad;
+}
+
+/* This is a placeholder for a profile photo */
+.profile-placeholder {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background-color: #dedefd;
+    color: #5b5bd6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+/* ==============================
+   4. Shared Section Styles
+   ============================== */
+
+.section {
+    padding: 65px 20px;
+    text-align: center;
+}
+
+.section-title {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    max-width: 650px;
+    margin: 0 auto 25px;
+}
+
+/* Skills */
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills span {
+    background-color: #e7e7ff;
+    color: #4545b5;
+    padding: 9px 16px;
+    border-radius: 20px;
+}
+
+/* ==============================
+   5. Projects Section
+   ============================== */
+
+.projects-section {
+    background-color: #eeeeF8;
+}
+
+.project-container {
+    max-width: 1100px;
+    margin: 30px auto 0;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.project-card {
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+}
+
+.project-image {
+    height: 140px;
+    background-color: #dedefd;
+    color: #4545b5;
+    border-radius: 7px;
+    margin-bottom: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.project-card h3 {
+    margin-bottom: 8px;
+}
+
+.project-card p {
+    margin-bottom: 12px;
+    color: #555;
+}
+
+.project-link {
+    color: #5b5bd6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* ==============================
+   6. Contact Section
+   ============================== */
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6fb;
+    color: #333;
+}
+
+/* Contact Section */
+.contact-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Main Container */
+.contact-container {
+    width: 100%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Information */
+.contact-info {
+    background-color: #4f46e5;
+    color: white;
+    padding: 40px 30px;
+}
+
+.contact-info h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-info > p {
+    line-height: 1.7;
+    margin-bottom: 40px;
+    color: #e0e7ff;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.info-item span {
+    font-size: 22px;
+}
+
+.info-item p {
+    font-size: 15px;
+}
+
+/* Contact Form */
+.contact-form {
+    padding: 40px;
+}
+
+.contact-form h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    font-size: 14px;
+    outline: none;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #4f46e5;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #3730a3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        padding: 30px 25px;
+    }
+
+    .contact-form {
+        padding: 30px 25px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .contact-section {
+        padding: 20px 12px;
+    }
+
+    .contact-info h2,
+    .contact-form h2 {
+        font-size: 23px;
+    }
+
+    .contact-form {
+        padding: 25px 18px;
+    }
+
+}
+
+/* ==============================
+   7. Footer
+   ============================== */
+
+footer {
+    background-color: #22223b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ==============================
+   8. Responsive Design
+   ============================== */
+
+/* These styles work on small screens, such as mobile phones */
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .profile-placeholder {
+        width: 180px;
+        height: 180px;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 380px;
+    }
+}
